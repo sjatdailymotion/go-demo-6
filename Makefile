@@ -63,3 +63,6 @@ lint: vendor | $(PKGS) $(GOLINT) # ❷
 
 unit-test: 
     CGO_ENABLED=$(CGO_ENABLED) $(GO) test -test.v --run UnitTest --cover
+
+unit-test: 
+    CGO_ENABLED=$(CGO_ENABLED) $(GO) test -test.v --run UnitTest --cover
